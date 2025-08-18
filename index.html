@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquary.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vishwa Madushanka</div>
+            <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">Vishwa Madushanka</div>
+    <div class="hamburger-manu">
+       <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+       </div>
+       <div class="menu-links">
+        <li><a href="#home" onclick="toggleManu()">Home</a></li>
+        <li><a href="#blogs" onclick="toggleManu()">Blogs</a></li>
+        <li><a href="#contact" onclick="toggleManu()">Contact</a></li>
+       </div>
+    </div>
+    </nav>
+    <section id="profile">
+     <div class="section__ppic">
+     <img src="Resource/profile pic.jpg" alt="vishwa Madushanka profile pic" class="propic">
+     </div>
+    <div class="section__text">
+       <p class="section__text__p1">Hello I'm</p> 
+       <h1 class="title">Vishwa Madushanka</h1>
+       <p class="section__text__p2">undergratuate from University of moratuwa</p>
+       <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./Resource/Vishwa Madushanka Pathirana.pdf')">Downlord CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+       </div>
+       <div id="social-container">
+        <img src="Resource/linkedin.png" class="icon" onclick="location.href='https://www.linkedin.com/in/vishwa-madushanka-60b7a635a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'">
+        <img src="Resource/github.png" class="icon" onclick="location.href='https://github.com/vishwamadushanka'">
+        
+       </div>
+    </div>
+    </section>
+    <section id="blogs">
+        <p class="section__text__p1">browse My Recent articals</p>
+        <h1 class="title">Blog articals</h1>
+        <div class="blogs-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="Resource/GIMP.png" class="project-img">
+                </div>
+                <h2 class="experience-sub-title poject-title">GIMP: The Free and Powerful Alternative to Photoshop</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@madushankapathirana2004/gimp-the-free-and-powerful-alternative-to-photoshop-ec16aebe5c2e'">
+                     Medium
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="Contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="Resource/email (1).png" class="icon contact-icon">
+            <p><a href="mailtp:exampleemail@gmail.com">madushanka2004@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="Resource/linkedin.png" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/vishwa-madushanka-60b7a635a/">Linkedin</a></p>
+            </div>
+        </div>
+
+        
+    <form class="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit">Send</button>
+    </form>
+    
+    <p id="formMessage" class="hidden"></p>
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
